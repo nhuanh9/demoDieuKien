@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="kc">
+<img id="anh"
+     src="https://cdnimg.vietnamplus.vn/t1200/Uploaded/qrndqxjwp/2021_10_12/k3-a13d.jpg"
+     alt="" style="position: absolute; top: 50px; left: 0;">
+<button onclick="phai()">Sang phải</button>
+<button onclick="trai()">Sang trái</button>
+<button onclick="xuong()">Xuống</button>
+<button onclick="len()">len</button>
+
+<script>
+    let anh = document.getElementById('anh');
+    let kc = document.getElementById('kc');
+
+    function phai() {
+
+        anh.src = "https://cdnimg.vietnamplus.vn/t1200/Uploaded/qrndqxjwp/2021_10_12/k3-a13d.jpg"
+        anh.style.left = parseInt(anh.style.left) + 10 + 'px';
+    }
+
+    function trai() {
+        anh.src = "https://static.carmudi.vn/wp-content/uploads/2019-11/O9jszEGa7N.jpg"
+        anh.style.left = parseInt(anh.style.left) - 10 + 'px';
+    }
+
+    function xuong() {
+        anh.style.top = parseInt(anh.style.top) + 10 + 'px';
+    }
+    function len() {
+        anh.style.top = parseInt(anh.style.top) - 10 + 'px';
+    }
+
+
+</script>
+</body>
+</html>

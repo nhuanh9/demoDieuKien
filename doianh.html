@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="1.jpg" alt="" id="anh" onclick="doi()">
+<img src="1.jpg" alt="" id="anh1" onclick="doi1()">
+
+<script>
+    let anh = document.getElementById('anh')
+    let anh1 = document.getElementById('anh1')
+
+    function doi() {
+        let index = parseInt(Math.random() * 3)+1
+        anh.src = index + ".jpg";
+        if (anh.src == anh1.src) {
+            alert(1)
+        }
+    }
+    function doi1() {
+        let index = parseInt(Math.random() * 3)+1
+        anh1.src = index + ".jpg";
+    }
+</script>
+</body>
+</html>

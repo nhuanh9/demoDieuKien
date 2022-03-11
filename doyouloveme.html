@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body id="body">
+<input id="g" type="checkbox" onchange="change()"> Good <br>
+<input id="f" type="checkbox" onchange="change1()"> Fast <br>
+<input id="c" type="checkbox" onchange="change2()"> Cheap <br>
+
+<script>
+    let g = document.getElementById('g');
+    let f = document.getElementById('f');
+    let c = document.getElementById('c');
+
+    function change() {
+        if (g.checked == true && f.checked == true && c.checked == true) {
+            c.checked = false
+        }
+    }
+
+    function change1() {
+        if (g.checked == true && f.checked == true && c.checked == true) {
+            g.checked = false
+        }
+    }
+    function change2() {
+        if (g.checked == true && f.checked == true && c.checked == true) {
+            f.checked = false
+        }
+    }
+</script>
+</body>
+</html>
